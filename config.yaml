@@ -1,0 +1,33 @@
+vehicles:
+  makes: [Toyota]
+  models: [Tundra, Sequoia]
+  min_year: 2020
+  max_year: 2024
+  max_miles: 100000
+  drive_types: [4WD, AWD, 4X4]
+  required_condition: Run & Drive
+
+damage:
+  preferred_primary: [Hail]
+  excluded_primary: [Flood, Water/Flood, Fire, Burn, Rollover, Vandalism]
+  excluded_secondary: [Flood, Water/Flood, Fire, Burn, Rollover]
+
+geography:
+  preferred_states: [TX, OK, KS, NE, CO, WY, AZ, NM, TN, GA, NC, SC]
+  avoid_states: [MN, ND, SD, WI, MI, IA, IL, IN, OH, PA, NY, MA, CT, RI, VT, NH, ME]
+
+budget:
+  max_all_in: 15000
+  target_discount_pct: 25
+
+scoring:
+  weights:
+    damage: 30
+    vehicle: 20
+    mileage: 15
+    geography: 10
+    condition: 15
+    economics: 10
+
+output:
+  top_n: 10
