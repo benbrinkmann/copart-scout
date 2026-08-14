@@ -1,1 +1,4 @@
 PyYAML>=6.0,<7
+
+# Development only (test suite)
+pytest>=8.0
